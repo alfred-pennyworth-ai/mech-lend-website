@@ -1,0 +1,17 @@
+<!-- @dsCard group="Status" height=56 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>LtvBadge — preview</title></head>
+<body>
+<div id="root" class="ml-row"></div>
+<script>
+  var M = window.MechLend, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(React.Fragment, null,
+      h(M.LtvBadge, { state: 'safe' }),
+      h(M.LtvBadge, { state: 'watch' }),
+      h(M.LtvBadge, { state: 'call' }),
+      h(M.LtvBadge, { state: 'neutral' }, 'Paid off')));
+</script>
+</body>
+</html>

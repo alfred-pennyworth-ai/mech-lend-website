@@ -1,0 +1,16 @@
+<!-- @dsCard group="Data" height=200 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>LtvMeter — preview</title></head>
+<body>
+<div id="root" class="ml-stack"></div>
+<script>
+  var M = window.MechLend, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'grid', gap: 28, maxWidth: 420 } },
+      h(M.LtvMeter, { ltv: 48.2 }),
+      h(M.LtvMeter, { ltv: 71.8 }),
+      h(M.LtvMeter, { ltv: 78.5 })));
+</script>
+</body>
+</html>

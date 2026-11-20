@@ -1,0 +1,19 @@
+<!-- @dsCard group="Collateral" height=400 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CollateralCard — preview</title></head>
+<body>
+<div id="root" class="ml-stack"></div>
+<script>
+  var M = window.MechLend, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', gap: 24, flexWrap: 'wrap', alignItems: 'flex-start' } },
+      h(M.CollateralCard, { robotClass: 'Humanoid', model: 'Kestrel H2', serial: 'KH2-0419-77A3', valuation: 184200, principal: 92000, apr: 11.4 },
+        h(M.Button, { size: 'sm' }, 'View telemetry'),
+        h(M.Button, { size: 'sm', variant: 'quiet' }, 'Statement')),
+      h(M.CollateralCard, { robotClass: 'Quadruped', model: 'Trellis Q4', serial: 'TQ4-2210-0B91', valuation: 62500, principal: 47900, apr: 12.9 },
+        h(M.Button, { size: 'sm', variant: 'primary' }, 'Add collateral'),
+        h(M.Button, { size: 'sm' }, 'Repay'))));
+</script>
+</body>
+</html>

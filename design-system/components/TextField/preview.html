@@ -1,0 +1,16 @@
+<!-- @dsCard group="Forms" height=200 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>TextField — preview</title></head>
+<body>
+<div id="root" class="ml-stack"></div>
+<script>
+  var M = window.MechLend, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h('div', { style: { display: 'flex', gap: 24, flexWrap: 'wrap' } },
+      h(M.TextField, { label: 'Requested amount', prefix: '$', numeric: true, defaultValue: '120,000.00', help: 'Up to $138,150.00 against this robot.' }),
+      h(M.TextField, { label: 'Term', suffix: 'months', numeric: true, defaultValue: '60', error: 'Enter a term between 6 and 48 months.' }),
+      h(M.TextField, { label: 'Serial number', placeholder: 'e.g. KH2-0419-77A3' })));
+</script>
+</body>
+</html>

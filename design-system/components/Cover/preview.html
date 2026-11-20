@@ -1,0 +1,54 @@
+<!-- @dsCard height=320 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mech Lend</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--surface); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:320px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:320px; }
+  .art svg { display:block; width:480px; height:320px; }
+  .ink { fill:var(--ink); }
+  .metal { fill:var(--metal); }
+  .steel { fill:var(--line-strong); }
+  .light { fill:var(--signal); }
+  .dot { fill:var(--surface); }
+  .blk { rx:var(--radius-md); }
+  .sq { rx:var(--radius-sm); }
+  .words { position:absolute; left:var(--space-12); bottom:var(--space-8); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:80px; line-height:.98; font-weight:400; letter-spacing:-.01em; color:var(--ink); }
+  .tag { margin:var(--space-4) 0 0 2px; font-size:14px; line-height:20px; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 320" width="480" height="320">
+<!--
+  blocks      ink 144×280 slab bled off the top, cut with the Visor's slot and lit by the one signal light (the mark's motif built from the scales) · metal 304×136 bled off top and right · line-strong 192×128 — ≈36% of 960×320
+  arrangement one tall slab with a flush modular grid beside it, space-4 gutters, bottoms on one line space-12 above the edge
+  pattern     dot grid cut from the ground at space-6 pitch on the line-strong block — "precise, technical, mono, a 4px grid": spec-sheet hardware, thin and exact
+  scales      gutters space-4 (16), pitch space-6 (24), slot space-24 × space-6 with radius-md corners (a slit, not a pill), light 14 across, bottom space-12 (48); corners radius-md
+-->
+<rect class="ink blk" x="24" y="-8" width="144" height="280"/>
+<rect class="dot blk" x="48" y="168" width="96" height="24"/>
+<circle class="light" cx="124" cy="180" r="7"/>
+<rect class="metal blk" x="184" y="-8" width="304" height="136"/>
+<rect class="steel blk" x="184" y="144" width="192" height="128"/>
+<g class="dot">
+<circle cx="208" cy="168" r="2"/><circle cx="232" cy="168" r="2"/><circle cx="256" cy="168" r="2"/><circle cx="280" cy="168" r="2"/><circle cx="304" cy="168" r="2"/><circle cx="328" cy="168" r="2"/><circle cx="352" cy="168" r="2"/>
+<circle cx="208" cy="192" r="2"/><circle cx="232" cy="192" r="2"/><circle cx="256" cy="192" r="2"/><circle cx="280" cy="192" r="2"/><circle cx="304" cy="192" r="2"/><circle cx="328" cy="192" r="2"/><circle cx="352" cy="192" r="2"/>
+<circle cx="208" cy="216" r="2"/><circle cx="232" cy="216" r="2"/><circle cx="256" cy="216" r="2"/><circle cx="280" cy="216" r="2"/><circle cx="304" cy="216" r="2"/><circle cx="328" cy="216" r="2"/><circle cx="352" cy="216" r="2"/>
+<circle cx="208" cy="240" r="2"/><circle cx="232" cy="240" r="2"/><circle cx="256" cy="240" r="2"/><circle cx="280" cy="240" r="2"/><circle cx="304" cy="240" r="2"/><circle cx="328" cy="240" r="2"/><circle cx="352" cy="240" r="2"/>
+</g>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Mech<br>Lend</h1>
+<p class="tag">Capital for machines that work.</p>
+</div>
+</div>
+</body>
+</html>

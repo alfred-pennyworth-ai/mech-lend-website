@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mech Lend — Capital for machines that work.</title>
+<meta name="description" content="Financing for humanoid, mobile and industrial robots, valued from the machine itself. Any robot that does real work, from any maker.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0a0a0a">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mech Lend">
+<meta property="og:title" content="Mech Lend — Capital for machines that work.">
+<meta property="og:description" content="Financing for humanoid, mobile and industrial robots, valued from the machine itself.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Mech Lend Visor mark on a black stage.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mech Lend — Capital for machines that work.">
+<meta name="twitter:description" content="Financing for humanoid, mobile and industrial robots, valued from the machine itself.">
+<meta name="twitter:image" content="assets/og-image.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/site.css">
+
+<script>
+  // Night is the default; Studio only if the visitor chose it before. Runs before paint to avoid a flash.
+  try { if (localStorage.getItem('ml-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+  document.documentElement.classList.add('js');
+</script>
+<script src="js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="Mech Lend, home">
+      <span class="ml-logo" style="gap:14px">
+        <svg class="ml-logo-mark" viewBox="0 0 36 30" width="29" height="24" aria-hidden="true"><path class="mark-ink" fill-rule="evenodd" d="M9 0h18a9 9 0 0 1 9 9v12a9 9 0 0 1-9 9H9a9 9 0 0 1-9-9V9a9 9 0 0 1 9-9zM10 12h16a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5H10a1.5 1.5 0 0 1-1.5-1.5v-3A1.5 1.5 0 0 1 10 12z"/><circle class="mark-light" cx="24" cy="15" r="2"/></svg>
+        <span class="ml-logo-word" style="font-size:13px">MECH LEND</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#what-we-finance">What we finance</a></li>
+        <li><a href="#valuation">Valuation</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="ml-btn ml-btn-quiet ml-btn-sm theme-toggle" type="button" aria-label="Switch to Studio theme">Studio</button>
+      <a class="ml-btn ml-btn-secondary ml-btn-sm" href="#contact">Request terms</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1 · Hero -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="label">Robot financing</p>
+        <h1 id="hero-title" class="display">Capital for machines that work.</h1>
+        <p class="lede">Financing for humanoid, mobile and industrial robots — valued from the machine itself.</p>
+        <div class="actions">
+          <a class="ml-btn ml-btn-primary" href="#contact">Request terms</a>
+          <a class="ml-btn ml-btn-quiet" href="#how-it-works">See how it works</a>
+        </div>
+        <ul class="class-strip" aria-label="Robot classes we finance">
+          <li>Humanoid</li><li>Quadruped</li><li>Industrial arm</li><li>Mobile platform</li><li>Aerial</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 480 400" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse" x="220" y="180">
+              <circle class="cut" cx="12" cy="12" r="2"/>
+            </pattern>
+          </defs>
+          <!-- Visor slab: the mark's head, slot and one light, built at hero scale -->
+          <rect class="ink" x="24" y="0" width="168" height="320" rx="4"/>
+          <rect class="cut" x="52" y="196" width="112" height="28" rx="4"/>
+          <circle class="light pulse" cx="140" cy="210" r="8"/>
+          <!-- Modular blocks: brushed metal and steel with a 24px dot grid -->
+          <rect class="metal" x="208" y="0" width="272" height="152" rx="4"/>
+          <rect class="steel" x="208" y="168" width="208" height="152" rx="4"/>
+          <rect x="220" y="180" width="184" height="128" fill="url(#dot-grid)"/>
+          <!-- Spec-sheet dimension lines -->
+          <g class="dim">
+            <path d="M24 344v16M192 344v16M24 352h168"/>
+            <path d="M208 344v16M416 344v16M208 352h208"/>
+            <path d="M440 168h16M440 320h16M448 168v152"/>
+          </g>
+          <g class="dim-label">
+            <text x="108" y="380" text-anchor="middle">UNIT</text>
+            <text x="312" y="380" text-anchor="middle">VALUE</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · Problem -->
+  <section class="section" id="problem" aria-labelledby="problem-title">
+    <div class="wrap">
+      <p class="label">The problem</p>
+      <h2 id="problem-title" class="headline">Your robots are working. Your capital shouldn’t be stuck in them.</h2>
+      <ol class="grid-3 points">
+        <li>
+          <span class="index">01</span>
+          <h3>Banks don’t price robots</h3>
+          <p>A general lender sees an unfamiliar asset and asks for more collateral or a personal guarantee.</p>
+        </li>
+        <li>
+          <span class="index">02</span>
+          <h3>Vendor leases lock you in</h3>
+          <p>Financing tied to one maker limits which machines you deploy next.</p>
+        </li>
+        <li>
+          <span class="index">03</span>
+          <h3>Buying outright stalls growth</h3>
+          <p>Every unit paid in cash is a unit you can’t add next quarter.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5 · Approach -->
+  <section class="section band" id="approach" aria-labelledby="approach-title">
+    <div class="wrap approach-grid">
+      <div>
+        <p class="label">Our approach</p>
+        <h2 id="approach-title" class="headline">We lend against the machine, not just your balance sheet.</h2>
+        <p class="lede">Each robot is valued on its own — model, condition and how hard it works — so the robot itself carries the loan.</p>
+      </div>
+      <dl class="factor-stack">
+        <div><dt class="label">Model</dt><dd>What the machine is and who built it</dd></div>
+        <div><dt class="label">Condition</dt><dd>Age, service history and faults</dd></div>
+        <div><dt class="label">Utilization</dt><dd>How hard it works, hour by hour</dd></div>
+        <div class="factor-result"><dt class="label">Result</dt><dd>The robot carries the loan</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 6 · How it works -->
+  <section class="section" id="how-it-works" aria-labelledby="how-title">
+    <div class="wrap">
+      <p class="label">How it works</p>
+      <h2 id="how-title" class="headline">Four steps from fleet to funding.</h2>
+      <ol class="steps">
+        <li>
+          <span class="index">01</span>
+          <h3>Share your fleet</h3>
+          <p>Send a unit list, or connect telemetry for live data.</p>
+        </li>
+        <li>
+          <span class="index">02</span>
+          <h3>We value each unit</h3>
+          <p>Model, age, hours and maintenance set a value per robot.</p>
+        </li>
+        <li>
+          <span class="index">03</span>
+          <h3>Choose your terms</h3>
+          <p>Pick the advance and term that fit your cash flow.</p>
+        </li>
+        <li>
+          <span class="index">04</span>
+          <h3>Get funded</h3>
+          <p>Funds land in <span class="tbd" title="To be confirmed">[__]</span> business days after you sign.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7 · What we finance -->
+  <section class="section" id="what-we-finance" aria-labelledby="finance-title">
+    <div class="wrap">
+      <p class="label">What we finance</p>
+      <h2 id="finance-title" class="headline">Any robot that does real work, from any maker.</h2>
+      <ul class="classes">
+        <li class="class-card">
+          <svg class="spec" viewBox="0 0 120 80" aria-hidden="true">
+            <rect x="52" y="6" width="16" height="13" rx="4"/><path d="M55 12.5h10"/>
+            <rect x="47" y="22" width="26" height="24" rx="2"/>
+            <path d="M47 25l-6 20M73 25l6 20M54 46l-1 28M66 46l1 28M49 74h7M64 74h7"/>
+            <path class="dim" d="M98 6h6M98 74h6M101 6v68"/>
+          </svg>
+          <h3>Humanoid</h3>
+          <p>Warehouses, plants, stores.</p>
+        </li>
+        <li class="class-card">
+          <svg class="spec" viewBox="0 0 120 80" aria-hidden="true">
+            <rect x="28" y="28" width="60" height="14" rx="3"/><rect x="88" y="23" width="15" height="10" rx="2"/>
+            <path d="M34 42l-4 14 6 18M44 42l-4 14 6 18M72 42l4 14-6 18M82 42l4 14-6 18"/>
+            <path class="dim" d="M28 14v6M88 14v6M28 17h60"/>
+          </svg>
+          <h3>Quadruped</h3>
+          <p>Inspection, security, site monitoring.</p>
+        </li>
+        <li class="class-card">
+          <svg class="spec" viewBox="0 0 120 80" aria-hidden="true">
+            <rect x="20" y="66" width="32" height="8" rx="1"/><rect x="29" y="58" width="14" height="8" rx="1"/>
+            <path d="M36 58l20-32 34 12 4 12"/>
+            <circle cx="36" cy="58" r="3"/><circle cx="56" cy="26" r="3"/><circle cx="90" cy="38" r="3"/>
+            <path d="M89 50h10M89 50v6M99 50v6"/>
+            <path class="dim" d="M108 26h6M108 74h6M111 26v48"/>
+          </svg>
+          <h3>Industrial arm</h3>
+          <p>Welding, picking, palletizing, machine tending.</p>
+        </li>
+        <li class="class-card">
+          <svg class="spec" viewBox="0 0 120 80" aria-hidden="true">
+            <rect x="34" y="28" width="52" height="16" rx="1"/>
+            <rect x="20" y="44" width="80" height="18" rx="3"/>
+            <circle cx="34" cy="67" r="5"/><circle cx="86" cy="67" r="5"/>
+            <path class="dim" d="M20 10v6M100 10v6M20 13h80"/>
+          </svg>
+          <h3>Mobile platform</h3>
+          <p>AMRs moving totes, carts, pallets.</p>
+        </li>
+        <li class="class-card">
+          <svg class="spec" viewBox="0 0 120 80" aria-hidden="true">
+            <rect x="48" y="34" width="24" height="10" rx="3"/>
+            <path d="M48 37L28 28M72 37l20-9M28 28v-3M92 28v-3M53 44l-4 10M67 44l4 10"/>
+            <ellipse cx="28" cy="24" rx="14" ry="2.5"/><ellipse cx="92" cy="24" rx="14" ry="2.5"/>
+            <circle cx="60" cy="48" r="3"/>
+            <path class="dim" d="M14 70v6M106 70v6M14 73h92"/>
+          </svg>
+          <h3>Aerial</h3>
+          <p>Drones for inspection, survey, inventory.</p>
+        </li>
+      </ul>
+      <p class="note">New or used. Financed unit by unit, so a mixed fleet is fine.</p>
+    </div>
+  </section>
+
+  <!-- 8 · Valuation -->
+  <section class="section" id="valuation" aria-labelledby="valuation-title">
+    <div class="wrap valuation-grid">
+      <div>
+        <p class="label">Valuation</p>
+        <h2 id="valuation-title" class="headline">We value the robot from how it actually works.</h2>
+        <ul class="factors">
+          <li>
+            <h3>Hours and utilization</h3>
+            <p>A busy robot is a productive asset.</p>
+          </li>
+          <li>
+            <h3>Maintenance and faults</h3>
+            <p>Service history and error logs show condition.</p>
+          </li>
+          <li>
+            <h3>Model, age and resale</h3>
+            <p>What the unit would fetch on the secondary market.</p>
+          </li>
+        </ul>
+      </div>
+      <figure class="unit">
+        <article class="ml-card" aria-labelledby="unit-title">
+          <div class="ml-card-head">
+            <div>
+              <div class="ml-card-class">Commercial cleaning robot</div>
+              <h3 class="ml-card-title" id="unit-title">Sweep C3</h3>
+              <span class="ml-serial">SN SC3-1127-04B9</span>
+            </div>
+            <span class="ml-badge ml-badge-safe">Healthy</span>
+          </div>
+          <div class="ml-meter" role="meter" aria-label="Loan-to-value" aria-valuenow="49.9" aria-valuemin="0" aria-valuemax="100" aria-valuetext="49.9%, Healthy">
+            <div class="ml-meter-head">
+              <span class="ml-meter-label">Loan-to-value</span>
+              <span class="meter-readout">
+                <span class="ml-meter-value">49.9%</span>
+                <span class="ml-badge ml-badge-safe">Healthy</span>
+              </span>
+            </div>
+            <div class="ml-meter-track">
+              <div class="ml-meter-fill safe" style="width:49.9%"></div>
+              <div class="ml-meter-tick" style="left:60%" title="Watch at 60%"></div>
+              <div class="ml-meter-tick" style="left:75%" title="Margin call at 75%"></div>
+            </div>
+            <div class="ml-meter-scale">
+              <span class="at-watch" style="left:60%">Watch 60%</span>
+              <span class="at-call" style="left:75%">Call 75%</span>
+            </div>
+          </div>
+          <div class="ml-card-stats unit-stats">
+            <div class="ml-stat ml-stat-sm">
+              <span class="ml-stat-label">Valuation</span>
+              <span class="ml-stat-value"><span class="tbd" title="To be confirmed">[$__]</span></span>
+            </div>
+            <div class="ml-stat ml-stat-sm">
+              <span class="ml-stat-label">Advance</span>
+              <span class="ml-stat-value"><span class="tbd" title="To be confirmed">[$__]</span></span>
+            </div>
+          </div>
+        </article>
+        <figcaption>Illustrative unit. Watch and call thresholds are set per loan; the ones shown are examples.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9 + 3 · Why Mech Lend / track record -->
+  <section class="section band" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <p class="label">Why Mech Lend</p>
+      <h2 id="why-title" class="headline">The team to build the lender for the robot economy.</h2>
+      <div class="track">
+        <div class="ml-stat">
+          <span class="ml-stat-label">DFDV · since April 2025</span>
+          <span class="ml-stat-value">$430M+</span>
+          <span class="ml-stat-note">Raised across convertible notes, equity and preferred stock for a Nasdaq-listed Solana treasury company.</span>
+        </div>
+        <div class="ml-stat">
+          <span class="ml-stat-label">Apyx · 2026</span>
+          <span class="ml-stat-value">$400M</span>
+          <span class="ml-stat-note">Debt capital raised in two months.</span>
+        </div>
+      </div>
+      <ol class="grid-3 points">
+        <li>
+          <span class="index">01</span>
+          <h3>We’ve raised at scale</h3>
+          <p>$400M of debt at Apyx in two months, and $430M+ at DFDV.</p>
+        </li>
+        <li>
+          <span class="index">02</span>
+          <h3>Built at Kraken</h3>
+          <p>Risk, operations and markets at one of crypto’s largest exchanges.</p>
+        </li>
+        <li>
+          <span class="index">03</span>
+          <h3>We understand the machine</h3>
+          <p>Valuations from engineers and machine data, not a generic equipment table.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 2 · Team -->
+  <section class="section" id="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <p class="label">Team · all ex-Kraken</p>
+      <h2 id="team-title" class="headline">Five co-founders who built DFDV and Apyx together.</h2>
+      <ul class="people">
+        <li class="person">
+          <h3>Joseph Onorati</h3>
+          <p class="role">CEO and Chairman of DFDV</p>
+          <p>At Kraken 2016–2024, most recently Chief Strategy Officer. Earlier CEO of CaVirtEx, Canada’s first Bitcoin exchange.</p>
+        </li>
+        <li class="person">
+          <h3>Parker White, CFA</h3>
+          <p class="role">Leads Apyx</p>
+          <p>Co-founded DFDV as COO and CIO. Engineering Director at Kraken 2018–2025, after five years in bond trading and portfolio management.</p>
+        </li>
+        <li class="person">
+          <h3>John Han, CFA</h3>
+          <p class="role">CFO and COO of DFDV</p>
+          <p>Led strategic finance at Kraken; VP Finance at Binance. Began in equity research at Goldman Sachs, then invested at Nezu Asia Capital and Driehaus Capital. Director of Product Strategy at Orbital Insights.</p>
+        </li>
+        <li class="person">
+          <h3>Dawson Reid</h3>
+          <p class="role">CTO of Apyx</p>
+          <p>Director of Engineering at Kraken for more than eight years.</p>
+        </li>
+        <li class="person">
+          <h3>Pete Humiston</h3>
+          <p class="role">CMO of DFDV</p>
+          <p>Led DFDV’s research and content before becoming CMO. Previously Head of Research at Kraken, running Kraken Intelligence.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 10 · Contact -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="label">Get in touch</p>
+        <h2 id="contact-title" class="headline">Let’s talk.</h2>
+        <p class="lede">Whether you operate robots, build them or fund them, we’d like to meet.</p>
+      </div>
+      <!-- Replace the [__] placeholders with the real contact, then turn the email into a mailto: link. -->
+      <dl class="contact-card ml-card">
+        <div><dt class="label">Contact</dt><dd><span class="tbd" title="To be confirmed">[__]</span></dd></div>
+        <div><dt class="label">Email</dt><dd><span class="tbd" title="To be confirmed">[__]</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span class="ml-logo" style="gap:12px">
+      <svg class="ml-logo-mark" viewBox="0 0 36 30" width="24" height="20" aria-hidden="true"><path class="mark-ink" fill-rule="evenodd" d="M9 0h18a9 9 0 0 1 9 9v12a9 9 0 0 1-9 9H9a9 9 0 0 1-9-9V9a9 9 0 0 1 9-9zM10 12h16a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5H10a1.5 1.5 0 0 1-1.5-1.5v-3A1.5 1.5 0 0 1 10 12z"/><circle class="mark-light" cx="24" cy="15" r="2"/></svg>
+      <span class="ml-logo-word" style="font-size:11px">MECH LEND</span>
+    </span>
+    <p>Capital for machines that work.</p>
+    <p class="fine">© <span data-year>2026</span> Mech Lend. Unit figures shown are illustrative, not an offer of credit.</p>
+  </div>
+</footer>
+</body>
+</html>
