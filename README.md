@@ -10,7 +10,7 @@ Marketing site for Mech Lend: *Capital for machines that work.* A single static 
 ```
 site/
   index.html            the page: hero, problem, approach, how it works, what we finance,
-                        valuation, why Mech Lend, team, contact
+                        valuation, why Mech Lend, contact
   favicon.svg           the Night app icon
   .nojekyll             tells GitHub Pages to serve files as they are
   css/tokens.css        copied unchanged from design-system/tokens.css
