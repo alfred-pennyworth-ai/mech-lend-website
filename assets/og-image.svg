@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Mech Lend share image (Night). Text-free so it renders identically without Michroma installed. -->
+  <defs>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse" x="848" y="246">
+      <circle cx="16" cy="16" r="3" fill="#0a0a0a"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <g transform="translate(96 255) scale(4)">
+    <path fill="#f2f2f0" fill-rule="evenodd" d="M9 0h18a9 9 0 0 1 9 9v12a9 9 0 0 1-9 9H9a9 9 0 0 1-9-9V9a9 9 0 0 1 9-9zM10 12h16a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5H10a1.5 1.5 0 0 1-1.5-1.5v-3A1.5 1.5 0 0 1 10 12z"/>
+    <circle cx="24" cy="15" r="2" fill="#7fc4ff"/>
+  </g>
+  <rect x="624" y="-8" width="200" height="470" rx="4" fill="#f2f2f0"/>
+  <rect x="662" y="300" width="124" height="36" rx="4" fill="#0a0a0a"/>
+  <circle cx="760" cy="318" r="10" fill="#7fc4ff"/>
+  <rect x="840" y="-8" width="400" height="230" rx="4" fill="#b8bbbf"/>
+  <rect x="840" y="238" width="280" height="224" rx="4" fill="#6a6d71"/>
+  <rect x="848" y="246" width="256" height="192" fill="url(#dots)"/>
+  <path d="M624 500v20M824 500v20M624 510h200M840 500v20M1120 500v20M840 510h280" stroke="#b8bbbf" stroke-width="1.5" fill="none"/>
+</svg>
